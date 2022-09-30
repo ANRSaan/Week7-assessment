@@ -30,5 +30,8 @@ const isPangram = string => {
 console.log(isPangram("The quick brown fox jumps over the lazy dog!"))
 console.log(isPangram("I like cats, but not mice"))
 
-/*the space complexity of this program is O(n), since we have to do a loop,
+/*the time complexity of this program is O(n), since we have to do a loop,
 but we avoid O(n^2) complexity by using an object to search if we've used a letter*/
+
+/*the space complexity of this program is also O(n), 
+because the space is dependent on looping over the string */
