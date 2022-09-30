@@ -7,7 +7,10 @@ const sumZero = nums => {
     let zeroCount = 0
     for (i = 0; i < nums.length; i++){
 
-        //create an object to search through so as not to nest "for" loops later
+        /*create an object to search through so as not to nest "for" loops later,
+        since searching an object is O(1) complexity.
+        I'm setting the value to null, because it doesn't matter what the value is;
+        we're only using the key*/
         numsMap[nums[i]] = null
 
         //while looping the initial loop, check if 2 numbers are 0 in order to return true faster
@@ -41,4 +44,6 @@ const sumZero = nums => {
     return false
 }
 
-console.log(sumZero([1,2,0,3,4,-2,5,6,7]))
+console.log(sumZero([1,2,0,3,4,-2,5,6,7])) // 2 and -2
+console.log(sumZero([1,2,0,3,4,2,5,6,7])) // none
+console.log(sumZero([1,2,0,3,4,0,5,6,7])) // 0 and 0
