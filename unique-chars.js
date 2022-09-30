@@ -19,3 +19,5 @@ const uniqueChars = word => {
 
 console.log(uniqueChars("Brian"))
 console.log(uniqueChars("Mississippi"))
+
+//the space complexity of this program is O(n), since we have to do a loop.

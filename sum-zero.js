@@ -47,3 +47,6 @@ const sumZero = nums => {
 console.log(sumZero([1,2,0,3,4,-2,5,6,7])) // 2 and -2
 console.log(sumZero([1,2,0,3,4,2,5,6,7])) // none
 console.log(sumZero([1,2,0,3,4,0,5,6,7])) // 0 and 0
+
+/*the space complexity of this program is O(n), since we have to do a loop,
+but O(n^2) is avoided through using an object*/
