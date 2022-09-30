@@ -1,7 +1,7 @@
 
 
 const uniqueChars = word => {
-    wordMap = {}
+    let wordMap = {}
 
     /*Loops over the word and checks to see if it exists in the object defined above.
     If it doesn't, it adds it to the object.  Like sum-zero.js, I'm using an object so that
